@@ -1,1 +1,21 @@
+name: EasyScript
+version: 1.0.0
+main: pl.macie.easyscript.EasyScriptPlugin
+api-version: '1.20'
+author: macie
+description: Lightweight .es scripting plugin for Paper and Spigot servers.
 
+commands:
+  easyscript:
+    description: Main EasyScript command.
+    usage: /easyscript <help|reload|list|info>
+    aliases: [es]
+    permission: easyscript.admin
+
+permissions:
+  easyscript.admin:
+    description: Allows using EasyScript admin commands.
+    default: op
+  easyscript.cooldown.bypass:
+    description: Allows bypassing EasyScript command cooldowns.
+    default: op
