@@ -1,0 +1,19 @@
+# Folder inside plugins/EasyScript where .es files are loaded from.
+scripts-folder: scripts
+
+# Folder inside plugins/EasyScript where scripts can safely create, read and write files.
+# Script file actions cannot access paths outside this folder.
+script-files-folder: files
+
+# Maximum characters read by one script file read/send action.
+max-file-read-chars: 20000
+
+# Saves an example script on the first server start.
+save-example-script: true
+
+# Maximum parse errors displayed in-game after /easyscript reload.
+max-visible-errors: 8
+
+# Persistent script variables are saved in batches instead of on every action.
+# Set to 0 to save only when the plugin disables.
+variables-autosave-minutes: 5
